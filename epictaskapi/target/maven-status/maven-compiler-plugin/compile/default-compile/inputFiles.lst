@@ -1,0 +1,15 @@
+D:\Fiap2Ano\Materias\DBE\epictask-H-master\epictaskapi\src\main\java\br\com\fiap\epictaskapi\config\security\SecurityConfiguration.java
+D:\Fiap2Ano\Materias\DBE\epictask-H-master\epictaskapi\src\main\java\br\com\fiap\epictaskapi\repository\TaskRepository.java
+D:\Fiap2Ano\Materias\DBE\epictask-H-master\epictaskapi\src\main\java\br\com\fiap\epictaskapi\dto\UserDto.java
+D:\Fiap2Ano\Materias\DBE\epictask-H-master\epictaskapi\src\main\java\br\com\fiap\epictaskapi\service\TaskService.java
+D:\Fiap2Ano\Materias\DBE\epictask-H-master\epictaskapi\src\main\java\br\com\fiap\epictaskapi\config\DatabaseSeed.java
+D:\Fiap2Ano\Materias\DBE\epictask-H-master\epictaskapi\src\main\java\br\com\fiap\epictaskapi\EpictaskapiApplication.java
+D:\Fiap2Ano\Materias\DBE\epictask-H-master\epictaskapi\src\main\java\br\com\fiap\epictaskapi\repository\UserRepository.java
+D:\Fiap2Ano\Materias\DBE\epictask-H-master\epictaskapi\src\main\java\br\com\fiap\epictaskapi\model\Role.java
+D:\Fiap2Ano\Materias\DBE\epictask-H-master\epictaskapi\src\main\java\br\com\fiap\epictaskapi\model\User.java
+D:\Fiap2Ano\Materias\DBE\epictask-H-master\epictaskapi\src\main\java\br\com\fiap\epictaskapi\service\AuthenticationService.java
+D:\Fiap2Ano\Materias\DBE\epictask-H-master\epictaskapi\src\main\java\br\com\fiap\epictaskapi\service\UserService.java
+D:\Fiap2Ano\Materias\DBE\epictask-H-master\epictaskapi\src\main\java\br\com\fiap\epictaskapi\controller\TaskController.java
+D:\Fiap2Ano\Materias\DBE\epictask-H-master\epictaskapi\src\main\java\br\com\fiap\epictaskapi\model\Task.java
+D:\Fiap2Ano\Materias\DBE\epictask-H-master\epictaskapi\src\main\java\br\com\fiap\epictaskapi\dto\TaskDto.java
+D:\Fiap2Ano\Materias\DBE\epictask-H-master\epictaskapi\src\main\java\br\com\fiap\epictaskapi\controller\UserController.java

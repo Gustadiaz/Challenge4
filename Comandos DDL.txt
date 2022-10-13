@@ -1,0 +1,24 @@
+CREATE TABLE "RM88008"."TB_TASK" 
+   (	"ID" NUMBER(19,0) GENERATED ALWAYS AS IDENTITY MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 1 CACHE 20 NOORDER  NOCYCLE  NOKEEP  NOSCALE  NOT NULL, 
+	"DESCRIPTION" VARCHAR2(250 CHAR), 
+	"SCORE" NUMBER(10,0) NOT NULL, 
+	"STATUS" NUMBER(10,0) NOT NULL, 
+	"TITLE" VARCHAR2(255 CHAR))
+
+
+Método de SaveAll responsável pela criação das 10 tasks iniciais da API:
+
+taskRepository.saveAll(List.of( 
+            new Task("BD", "Modelar as tabelas", 150, 0),
+            new Task("Debug", "Modelar as tabelas", 20, 0),
+            new Task("Cadastro", "Modelar as tabelas", 10, 0),
+            new Task("Login", "Modelar as tabelas", 50, 0),
+            new Task("Deploy", "Modelar as tabelas", 25, 0),
+            new Task("Testes", "Modelar as tabelas", 80, 0),
+            new Task("Bug", "Modelar as tabelas", 75, 0),
+            new Task("Logout", "Modelar as tabelas", 5, 0),
+            new Task("Internacionalização", "Modelar as tabelas", 15, 0),
+            new Task("Prototipo", "Prototipar as telas do app", 20, 0)
+        ));
+
+Uma vez em que o sistema está rodando, todas edições são feitas com base no ID da Task e novas tasks são cadastradas com o próximo ID de acordo com a criação da Tabela com o Incremento de 1 ID.
