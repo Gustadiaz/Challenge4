@@ -27,9 +27,21 @@ public class SecurityConfiguration{
                 
                 // Usuário
                 .antMatchers(HttpMethod.GET, "/api/user/**").authenticated()
-                .antMatchers(HttpMethod.POST, "/api/user").authenticated()
+                .antMatchers(HttpMethod.POST, "/api/user").permitAll()
                 .antMatchers(HttpMethod.DELETE, "/api/user/**").authenticated()
                 .antMatchers(HttpMethod.PUT, "/api/user/**").authenticated()
+
+                //Exercicio
+                .antMatchers(HttpMethod.GET, "/api/exercicio/**").authenticated()
+                .antMatchers(HttpMethod.POST, "/api/exercicio").permitAll()
+                .antMatchers(HttpMethod.DELETE, "/api/exercicio/**").authenticated()
+                .antMatchers(HttpMethod.PUT, "/api/exercicio/**").authenticated()
+
+                //Clinicas
+                .antMatchers(HttpMethod.GET, "/api/clinicaspublicas/**").authenticated()
+                .antMatchers(HttpMethod.POST, "/api/clinicaspublicas").authenticated()
+                .antMatchers(HttpMethod.DELETE, "/api/clinicaspublicas/**").authenticated()
+                .antMatchers(HttpMethod.PUT, "/api/clinicaspublicas/**").authenticated()
 
                 // Infra
                 .antMatchers("/h2-console/**").permitAll()

@@ -29,14 +29,17 @@ public class Psicologo {
 
     private String setor;
 
+    private String estado;
+
     public Psicologo() {}
 
-    public Psicologo(String name, String description, int idade, int documento, String setor) {
+    public Psicologo(String name, String description, int idade, int documento, String setor, String estado) {
         this.name = name;
         this.description = description;
         this.idade = idade;
         this.documento = documento;
         this.setor = setor;
+        this.estado = estado;
     }
 
     public Long getId() {
@@ -87,9 +90,19 @@ public class Psicologo {
         this.setor = setor;
     }
 
-    @Override
-    public String toString() {
-        return "Psicologo [nome=" + name + ", description=" + description + ", id=" + id + ", idade=" + idade + ", documento=" + documento + ", setor=" + setor + "]";
+    public String getEstado() {
+        return estado;
     }
 
+    public void setEstado(String estado) {
+        this.estado = estado;
+    }
+
+    @Override
+    public String toString() {
+        return "Psicologo [nome=" + name + ", description=" + description + ", id=" + id + ", idade=" + idade + ", documento=" + documento + ", setor=" + setor + ",estado=" + estado +"]";
+    }
+
+
+    
 }

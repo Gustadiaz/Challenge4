@@ -6,7 +6,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.Size;
+
 
 @Entity
 @Table(name = "TB_EXERCICIO")
@@ -20,7 +20,6 @@ public class Exercicio {
     private String nmExercicio;
 
     @NotBlank
-    @Size(min = 20)
     private String dsExercicio;
 
     private int score = 100;

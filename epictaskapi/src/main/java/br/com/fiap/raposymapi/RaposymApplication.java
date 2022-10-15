@@ -6,10 +6,10 @@ import org.springframework.cache.annotation.EnableCaching;
 
 @SpringBootApplication
 @EnableCaching
-public class EpictaskapiApplication {
+public class RaposymApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(EpictaskapiApplication.class, args);
+		SpringApplication.run(RaposymApplication.class, args);
 	}
 
 }
