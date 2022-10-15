@@ -34,7 +34,7 @@ public class ClinicasPublicasController {
 
     @GetMapping
     @Cacheable("clinicaspublicas")
-    public Page<ClinicasPublicas> index(@PageableDefault(size = 5) Pageable pageable){
+    public Page<ClinicasPublicas> index(@PageableDefault(size = 1000) Pageable pageable){
         return service.listAll(pageable);
     }
 

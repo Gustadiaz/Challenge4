@@ -1,4 +1,4 @@
 FROM eclipse-temurin
 EXPOSE 8080
-ADD target/raposym-0.0.1-SNAPSHOT.jar raposym.jar
-ENTRYPOINT [ "java", "-jar", "raposym.jar" ]
+ADD target/raposymapi-0.0.1-SNAPSHOT.jar raposymapi.jar
+ENTRYPOINT [ "java", "-jar", "raposymapi.jar" ]

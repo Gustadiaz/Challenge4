@@ -34,7 +34,7 @@ public class ExercicioController {
 
     @GetMapping
     @Cacheable("exercicio")
-    public Page<Exercicio> index(@PageableDefault(size = 5) Pageable pageable){
+    public Page<Exercicio> index(@PageableDefault(size = 1000) Pageable pageable){
         return service.listAll(pageable);
     }
 

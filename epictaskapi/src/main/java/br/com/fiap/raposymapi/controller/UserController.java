@@ -32,7 +32,7 @@ public class UserController {
     private UserService service;
    
     @GetMapping
-    public Page<User> index(@PageableDefault(size = 5) Pageable pageable){
+    public Page<User> index(@PageableDefault(size = 1000) Pageable pageable){
         return service.listAll(pageable);
     }
 

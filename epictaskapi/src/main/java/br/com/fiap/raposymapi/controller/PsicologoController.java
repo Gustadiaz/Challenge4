@@ -29,7 +29,7 @@ public class PsicologoController {
     private PsicologoService service;
     
     @GetMapping
-    public Page<Psicologo> index(@PageableDefault(size = 5) Pageable paginacao){
+    public Page<Psicologo> index(@PageableDefault(size = 1000) Pageable paginacao){
         return service.listAll(paginacao);
     }
 
