@@ -10,10 +10,10 @@
 	</parent>
 	<packaging>jar</packaging>
 	<groupId>br.com.fiap</groupId>
-	<artifactId>epictaskapi</artifactId>
+	<artifactId>raposymapi</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>epictaskapi</name>
-	<description>API do Epic Task</description>
+	<name>raposymapi</name>
+	<description>API do Raposym</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
