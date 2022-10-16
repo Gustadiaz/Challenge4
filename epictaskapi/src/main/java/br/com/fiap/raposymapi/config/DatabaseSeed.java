@@ -27,8 +27,8 @@ public class DatabaseSeed implements CommandLineRunner {
     @Autowired
     UserRepository userRepository;
 
-    @Autowired
-    PasswordEncoder passwordEncoder;
+    //@Autowired
+    //PasswordEncoder passwordEncoder;
 
     @Autowired
     ExercicioRepository exercicioRepository;
@@ -39,19 +39,7 @@ public class DatabaseSeed implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
 
-        userRepository.save( new User()
-                            .name("Gustavo")
-                            .email("gustavo@fiap.com")
-                            .password(passwordEncoder.encode("123"))
-                            //.getRoles().add(new Role("USER"))   
-                        );
-
-        userRepository.save( new User()
-                            .name("Admin")
-                            .email("admin@fiap.com")
-                            .password(passwordEncoder.encode("admin"))
-                          
-                        );
+        
 
         psicologoRepository.saveAll(List.of( 
             new Psicologo("Fernanda", "Ola, sou a Fernanda e trabalho na Psicologia Viva", 27, 9873, "Privado", "RJ"),

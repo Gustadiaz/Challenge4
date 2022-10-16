@@ -19,15 +19,14 @@ public class UserService {
     @Autowired
     UserRepository repository;
 
-    @Autowired
-    PasswordEncoder passwordEncoder;
+    
 
     public Page<User> listAll(Pageable pageable) {
         return repository.findAll(pageable);
     }
 
     public void save(@Valid User user) {
-        user.setPassword(passwordEncoder.encode(user.getPassword()));
+        user.setPassword(user.getPassword());
         repository.save(user);
     }
 
