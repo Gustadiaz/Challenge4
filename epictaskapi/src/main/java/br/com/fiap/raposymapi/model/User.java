@@ -21,8 +21,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.util.Assert;
 
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonProperty.Access;
+
 
 import br.com.fiap.raposymapi.dto.UserDto;
 
@@ -41,7 +40,7 @@ public class User implements UserDetails {
     @Email
     private String email;
 
-    @JsonProperty(access = Access.WRITE_ONLY)
+
     @Size(min = 8, max = 200)
     private String password;
 
@@ -149,7 +148,7 @@ public class User implements UserDetails {
     }
 
     public UserDto toDto() {
-        return new UserDto(id, name, email);
+        return new UserDto(id, name, email, password);
     }
 
 }

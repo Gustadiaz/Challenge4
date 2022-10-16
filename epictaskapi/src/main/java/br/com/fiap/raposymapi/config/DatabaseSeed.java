@@ -46,6 +46,13 @@ public class DatabaseSeed implements CommandLineRunner {
                             //.getRoles().add(new Role("USER"))   
                         );
 
+        userRepository.save( new User()
+                            .name("Admin")
+                            .email("admin@fiap.com")
+                            .password(passwordEncoder.encode("admin"))
+                          
+                        );
+
         psicologoRepository.saveAll(List.of( 
             new Psicologo("Fernanda", "Ola, sou a Fernanda e trabalho na Psicologia Viva", 27, 9873, "Privado", "RJ"),
             new Psicologo("Gustavo", "Ola, sou o Gustavo e atualmente trabalho com psicologia", 34, 2434, "Privado", "SP"),
